@@ -3,6 +3,9 @@
 <div align="center">
   <img src="https://img.shields.io/github/license/cristianprochnow/BeTheHero" />
   <img src="https://img.shields.io/github/languages/code-size/cristianprochnow/BeTheHero" />
+  <img src="https://img.shields.io/badge/technology-node.js-green" />
+  <img src="https://img.shields.io/badge/technology-react.js-9cf" />
+  <img src="https://img.shields.io/badge/technology-react--native-darkviolet" />
 </div>
 
 <br />
