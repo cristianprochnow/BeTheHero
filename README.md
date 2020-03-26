@@ -59,9 +59,3 @@ Nas pastas `backend`, `frontend` e `mobile`, execute os comandos:
 7. E pronto, aproveite o conteúdo 🎉.
 
 <br />
-
-<h3>Progresso do Projeto<h3/>
-  
-- [x] Back-end
-- [x] Front-end
-- [x] Mobile
