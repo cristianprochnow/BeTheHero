@@ -14,7 +14,7 @@
 
 <br />
 
-<h3>Getting Started</h3>
+<h3>Getting Started  🏁</h3>
 
 Nas pastas `backend`, `frontend` e `mobile`, execute os comandos:
 
@@ -48,7 +48,7 @@ Nas pastas `backend`, `frontend` e `mobile`, execute os comandos:
 
 <br />
 
-<h3>Getting started no <code>mobile</code></h3>
+<h3>Getting started no <code>mobile</code>  📱</h3>
 
 1. Execute os comandos `npm install` ou `yarn`, dentro da pasta **mobile**.
 2. Configure o [arquivo da api](./mobile/src/services/api.js);
