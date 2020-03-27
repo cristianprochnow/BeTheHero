@@ -24,7 +24,27 @@
 
 <h3>Getting Started  🏁</h3>
 
-Nas pastas `backend`, `frontend` e `mobile`, execute os comandos:
+Na pasta `backend`, execute os comandos:
+
+**NPM**
+```bash
+npm install
+
+npx knex migrate:latest
+
+npm start
+```
+
+**Yarn**
+```bash
+yarn
+
+npx knex migrate:latest
+
+yarn start
+```
+
+Nas pastas `frontend` e `mobile`, execute os comandos:
 
 <br />
 
