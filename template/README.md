@@ -3,3 +3,8 @@
     Notebook Frame (without "Be The Hero" screen) created by zlatko_plamenov - www.freepik.com
   </code>
 </a>
+<a align="center" href="https://pixabay.com/images/id-160307/">
+  <code>
+    Smartphone Frame (without "Be The Hero" screen) created by OpenClipart-Vectors - pixabay.com
+  </code>
+</a>
