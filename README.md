@@ -44,9 +44,8 @@ npx knex migrate:latest
 yarn start
 ```
 
-Nas pastas `frontend` e `mobile`, execute os comandos:
-
 <br />
+Nas pastas `frontend` e `mobile`, execute os comandos:
 
 **NPM**
 ```bash
