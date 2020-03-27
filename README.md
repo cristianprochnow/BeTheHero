@@ -8,6 +8,14 @@
   <img src="https://img.shields.io/badge/technology-react--native-darkviolet" />
 </div>
 
+<br /><br />
+
+<div align="center">
+  <img height="250" src="./template/iphone-incidents.png" />
+  <img height="250" src="./template/iphone-detail.png" />
+  <img height="250" src="./template/notebook-tela-home.png" />
+</div>
+
 <br />
 
 <p align="center">Projeto que é resultado da <code>Semana OmniStack 11.0</code> <strong><a href="https://rocketseat.com.br/">@Rocketseat</a></strong> .</p>
@@ -48,7 +56,7 @@ Nas pastas `backend`, `frontend` e `mobile`, execute os comandos:
 
 <br />
 
-<h3>Getting started no <code>mobile</code>  📱</h3>
+<h3>Getting started in <code>mobile</code>  📱</h3>
 
 1. Execute os comandos `npm install` ou `yarn`, dentro da pasta **mobile**.
 2. Configure o [arquivo da api](./mobile/src/services/api.js);
