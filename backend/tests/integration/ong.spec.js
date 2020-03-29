@@ -4,7 +4,7 @@ const connection = require('../../src/database/connection');
 const knexConfig = require('../../knexfile');
 
 describe('ONG', () => {
-  beforeEach(async () => {
+  beforeAll(async () => {
     await connection.migrate.rollback(knexConfig.test);
     await connection.migrate.latest(knexConfig.test);
   });
@@ -32,7 +32,15 @@ describe('ONG', () => {
     const response = await request(app)
       .get('/ongs');
 
+    expect(response.body).not.toBeUndefined();
     expect(response.body).not.toBeNull();
+
+    expect(response.body[0]).toHaveProperty('id');
+    expect(response.body[0]).toHaveProperty('name');
+    expect(response.body[0]).toHaveProperty('email');
+    expect(response.body[0]).toHaveProperty('whatsapp');
+    expect(response.body[0]).toHaveProperty('city');
+    expect(response.body[0]).toHaveProperty('uf');
   });
 });
 
