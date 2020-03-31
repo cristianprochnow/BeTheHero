@@ -1,20 +1,20 @@
 const request = require('supertest');
 const app = require('../../src/app');
 const connection = require('../../src/database/connection');
-const knexConfig = require('../../knexfile');
+// const knexConfig = require('../../knexfile');
 
 describe('ONG', () => {
-  beforeAll(async () => {
-    await connection.migrate.rollback(knexConfig.test);
-    await connection.migrate.latest(knexConfig.test);
-  });
+//   beforeAll(async () => {
+//     await connection.migrate.latest(knexConfig.test);
+//   });
 
   afterAll(async () => {
+    // await connection.migrate.rollback(knexConfig.test);
     await connection.destroy();
   });
 
   it('should be able to create an ONG', async () => {
-    const response = await request(app)
+    const ongCreationResponse = await request(app)
       .post('/ongs')
       .send({
         name: "Show",
@@ -24,23 +24,23 @@ describe('ONG', () => {
         uf: "SC"
       });
 
-      expect(response.body).toHaveProperty('id');
-      expect(response.body.id).toHaveLength(8);
+      expect(ongCreationResponse.body).toHaveProperty('id');
+      expect(ongCreationResponse.body.id).toHaveLength(8);
   });
 
   it('should be able to list all the ONGs', async () => {
-    const response = await request(app)
+    const ongListingResponse = await request(app)
       .get('/ongs');
 
-    expect(response.body).not.toBeUndefined();
-    expect(response.body).not.toBeNull();
+    expect(ongListingResponse.body).not.toBeUndefined();
+    expect(ongListingResponse.body).not.toBeNull();
 
-    expect(response.body[0]).toHaveProperty('id');
-    expect(response.body[0]).toHaveProperty('name');
-    expect(response.body[0]).toHaveProperty('email');
-    expect(response.body[0]).toHaveProperty('whatsapp');
-    expect(response.body[0]).toHaveProperty('city');
-    expect(response.body[0]).toHaveProperty('uf');
+    expect(ongListingResponse.body[0]).toHaveProperty('id');
+    expect(ongListingResponse.body[0]).toHaveProperty('name');
+    expect(ongListingResponse.body[0]).toHaveProperty('email');
+    expect(ongListingResponse.body[0]).toHaveProperty('whatsapp');
+    expect(ongListingResponse.body[0]).toHaveProperty('city');
+    expect(ongListingResponse.body[0]).toHaveProperty('uf');
   });
 });
 
