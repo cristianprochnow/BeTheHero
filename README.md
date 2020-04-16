@@ -10,8 +10,6 @@
     <a href="https://github.com/cristianprochnow/BeTheHero"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/cristianprochnow/BeTheHero">View Demo</a>
-    ·
     <a href="https://github.com/cristianprochnow/BeTheHero/issues">Report Bug</a>
     ·
     <a href="https://github.com/cristianprochnow/BeTheHero/issues">Request Feature</a>
@@ -42,12 +40,9 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Getting Started no Mobile](#getting-started-mobile)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
 
 <br />
 
